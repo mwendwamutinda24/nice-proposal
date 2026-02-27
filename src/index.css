@@ -1,0 +1,171 @@
+/* === Global Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  scroll-behavior: smooth;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 4px 4px 5px 5px white;
+}
+.header a {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 20px;
+  color: white;
+}
+.header a:hover {
+  color: yellowgreen;
+}
+
+/* === Homepage Section === */
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+.img {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 45%;
+  margin: 20px auto;
+  display: block;
+}
+.img:hover {
+  opacity: 0.8;
+}
+.Home1 p {
+  font-size: 24px;
+  color: white;
+  margin: 20px;
+  font-weight: 500;
+}
+
+/* === Buttons === */
+.btn1, .btn2 {
+  width: 80%;
+  max-width: 230px;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  border: none;
+  border-radius: 2rem;
+  font-size: 15px;
+  color: white;
+}
+.btn1 {
+  background: blueviolet;
+}
+.btn2 {
+  background: red;
+}
+.btn1:hover, .btn2:hover {
+  background: rgb(133, 3, 46);
+  transition: 0.4s;
+}
+
+/* === Projects Section === */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.project1, .project2 {
+  width: 90%;
+  max-width: 450px;
+  background: black;
+  color: white;
+  box-shadow: 3px 4px 5px 4px white;
+  border-radius: 1rem;
+  margin: 20px;
+  padding: 20px;
+}
+.project1 h2, .project2 h2 {
+  color: rgb(150, 2, 71);
+  margin-left: 10px;
+}
+.project1 h3, .project2 h3 {
+  color: blueviolet;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+}
+.project1 h3:hover, .project2 h3:hover {
+  color: red;
+}
+.project1 p, .project2 p {
+  color: greenyellow;
+  margin-left: 10px;
+}
+.project1:hover, .project2:hover {
+  background: rgb(64, 65, 63);
+}
+
+/* === Contact Section === */
+.contact {
+  width: 90%;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid aquamarine;
+}
+.con {
+  text-align: center;
+}
+.con1 h1 {
+  color: white;
+}
+.input1, .input2, .btn5 {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.input1 {
+  height: 40px;
+}
+.input2 {
+  height: 300px;
+}
+.btn5 {
+  height: 40px;
+  background: blue;
+  color: white;
+  border: none;
+}
+
+/* === Responsive Media Queries === */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .header a {
+    font-size: 16px;
+    margin: 5px;
+  }
+  .Home1 p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .btn1, .btn2 {
+    font-size: 14px;
+  }
+  .project1, .project2 {
+    margin: 10px;
+  }
+}
